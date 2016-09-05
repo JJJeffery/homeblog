@@ -1,0 +1,90 @@
+#sidebar {
+width: 19%;
+float: left;
+}
+#content {
+float: right;
+width: 80%;
+}
+.container {
+max-width: 100%!important;
+}
+
+#container {
+padding-top: 20px;
+}
+
+.services-section .services-post .inner-services-post {
+padding: 140px 10px;
+}
+.blog-section .blog-post .post-box ul.post-tags {
+width:16%;
+}
+.blog-section .blog-post .post-gal {
+width: 84%;
+}
+
+.team-post .left-part {
+width: 26%;
+}
+.team-post .right-part {
+width: 73%;
+}
+.bx-wrapper {
+max-width: 100%!important;
+}
+
+p.flex-caption {
+display: none;
+}
+
+.services-section .services-post .inner-services-post {
+	padding: 20px;
+}
+
+@media screen and (max-width: 991px){
+	#content {
+		width: 100%!important;
+	}
+
+	#sidebar {
+		width: 100%!important;
+		float: none;
+		margin-bottom: 20px;
+	}
+	.services-section .services-post .inner-services-post{padding:24% 0%}
+}
+
+@media (max-width: 767px) {
+	.blog-section .blog-post .post-box ul.post-tags {
+		width:25%; float:left;
+	}
+	.blog-section .blog-post .post-gal {
+		width: 75%; float:right;
+	}
+	.blog-section .blog-post .post-box ul.post-tags li{
+		padding:0px 15px 15px 0;
+	}
+	.blog-section .blog-post .post-box ul.post-tags li:last-child{padding-bottom:0}
+	.services-section .services-post .inner-services-post{padding:18% 0%}
+}
+
+@media (max-width: 480px) {
+	.services-section .services-post .inner-services-post{padding:18% 0%}
+}
+
+
+@media screen and (min-width: 768px){
+	.blog-section.col1 .blog-post .post-box .post-content{
+		width:auto;  margin-top:10px; margin-bottom:10px;
+	}
+	
+}
+
+@media screen and (min-width: 991px){
+	.services-section .services-post .inner-services-post{padding:22% 0%}
+}
+
+@media screen and (min-width: 1280px){
+	.services-section .services-post .inner-services-post{padding:28% 0%}
+}

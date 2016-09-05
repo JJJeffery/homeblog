@@ -1,0 +1,57 @@
+/*
+Theme Name: Travelify
+Theme URI: http://ifaxianing.com/wzmb/
+Description: 本主题是新发现<a href="http://ifaxianing.com/">SEO工作室</a>最新汉化的一款国外流行的wordpress响应式主题，该主题简洁大方，非常适合做个人的博客网站。非常感谢李新站长将此款主题免费共享给大家，官方网站：http://ifaxianing.com/。新浪微博：http://weibo.com/ilixin
+*/
+
+a.readmore {
+	float: left;
+}
+#wp_page_numbers ul {
+	float: left;
+}
+#wp_page_numbers ul li a {
+	float: right;
+}
+ul.default-wp-page li.previous {
+	float: right;
+}
+ul.default-wp-page li.next {
+	float: left;
+}
+#footerarea .widget {
+	float: right;
+}
+.entry-meta {
+	float: right;
+}
+#site-generator .copyright {
+	float: right;
+}
+.back-to-top {
+	left: 18px;
+	right: inherit;
+}
+.widget ul li {
+	background: none;
+}
+.widget ul {
+	list-style: disc;
+	padding-right: 20px;
+}
+.featured-text {
+	left: 30px;
+	right: inherit;
+}
+span.meta-nav {
+	display: none;
+}
+#main-nav li {
+    float: right;
+}
+.hgroup-right {
+    float: left;
+}
+#site-logo {
+    float: right;
+}
