@@ -148,18 +148,31 @@ class WP_Locale {
 		$this->weekday_abbrev[__('Saturday')]  = /* translators: three-letter abbreviation of the weekday */ __('Sat');
 
 		// The Months
-		$this->month['01'] = /* translators: month name */ __( 'January' );
-		$this->month['02'] = /* translators: month name */ __( 'February' );
-		$this->month['03'] = /* translators: month name */ __( 'March' );
-		$this->month['04'] = /* translators: month name */ __( 'April' );
-		$this->month['05'] = /* translators: month name */ __( 'May' );
-		$this->month['06'] = /* translators: month name */ __( 'June' );
-		$this->month['07'] = /* translators: month name */ __( 'July' );
-		$this->month['08'] = /* translators: month name */ __( 'August' );
-		$this->month['09'] = /* translators: month name */ __( 'September' );
-		$this->month['10'] = /* translators: month name */ __( 'October' );
-		$this->month['11'] = /* translators: month name */ __( 'November' );
-		$this->month['12'] = /* translators: month name */ __( 'December' );
+//		$this->month['01'] = /* translators: month name */ __( 'January' );
+//		$this->month['02'] = /* translators: month name */ __( 'February' );
+//		$this->month['03'] = /* translators: month name */ __( 'March' );
+//		$this->month['04'] = /* translators: month name */ __( 'April' );
+//		$this->month['05'] = /* translators: month name */ __( 'May' );
+//		$this->month['06'] = /* translators: month name */ __( 'June' );
+//		$this->month['07'] = /* translators: month name */ __( 'July' );
+//		$this->month['08'] = /* translators: month name */ __( 'August' );
+//		$this->month['09'] = /* translators: month name */ __( 'September' );
+//		$this->month['10'] = /* translators: month name */ __( 'October' );
+//		$this->month['11'] = /* translators: month name */ __( 'November' );
+//		$this->month['12'] = /* translators: month name */ __( 'December' );
+
+		$this->month['01'] = /* translators: month name */ __( '01月' );
+		$this->month['02'] = /* translators: month name */ __( '02月' );
+		$this->month['03'] = /* translators: month name */ __( '03月' );
+		$this->month['04'] = /* translators: month name */ __( '04月' );
+		$this->month['05'] = /* translators: month name */ __( '05月' );
+		$this->month['06'] = /* translators: month name */ __( '06月' );
+		$this->month['07'] = /* translators: month name */ __( '07月' );
+		$this->month['08'] = /* translators: month name */ __( '08月' );
+		$this->month['09'] = /* translators: month name */ __( '09月' );
+		$this->month['10'] = /* translators: month name */ __( '10月' );
+		$this->month['11'] = /* translators: month name */ __( '11月' );
+		$this->month['12'] = /* translators: month name */ __( '12月' );
 
 		// The Months, genitive
 		$this->month_genitive['01'] = /* translators: month name, genitive */ _x( 'January', 'genitive' );
