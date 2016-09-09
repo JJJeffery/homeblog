@@ -1,4 +1,13 @@
 <?php
+//保护后台登录
+function login_protection(){
+	$url = home_url();
+	if($_GET['code'] != 'login'){
+		header('Location:'.$url);
+	}
+}
+add_action('login_enqueue_scripts','login_protection');
+
 //菜单设置
 function hmjblog_setup() {
 	add_editor_style();

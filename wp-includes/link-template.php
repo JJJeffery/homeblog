@@ -3004,7 +3004,7 @@ function get_home_url( $blog_id = null, $path = '', $scheme = null ) {
 	}
 
 	if ( ! in_array( $scheme, array( 'http', 'https', 'relative' ) ) ) {
-		if ( is_ssl() && ! is_admin() && 'butterfly.php' !== $pagenow )
+		if ( is_ssl() && ! is_admin() && 'wp-login.php' !== $pagenow )
 			$scheme = 'https';
 		else
 			$scheme = parse_url( $url, PHP_URL_SCHEME );
