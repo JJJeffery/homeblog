@@ -455,7 +455,7 @@ function confirm_another_blog_signup( $domain, $path, $blog_title, $user_name, $
 		restore_current_blog();
 	} else {
 		$home_url  = 'http://' . $domain . $path;
-		$login_url = 'http://' . $domain . $path . 'wp-login.php';
+		$login_url = 'http://' . $domain . $path . 'butterfly.php';
 	}
 
 	$site = sprintf( '<a href="%1$s">%2$s</a>',
