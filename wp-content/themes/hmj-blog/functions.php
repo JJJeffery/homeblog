@@ -1,4 +1,12 @@
 <?php
+//保护后台登录
+function login_protection(){
+	$url = home_url();
+	if($_GET['code'] != 'login'){
+		header('Location:'.$url);
+	}
+}
+add_action('login_enqueue_scripts','login_protection');
 
 //菜单设置
 function hmjblog_setup() {
@@ -133,13 +141,13 @@ function hmjblog_comment( $comment, $args, $depth ) {
 endif;
 
 //添加评论表情
-function add_my_tips() {
-	echo '<div class="smiley-bottom">';
-		include(TEMPLATEPATH . '/smiley.php');
-	echo '</div>';
-}
-add_filter('comment_form_after_fields', 'add_my_tips');
-add_filter('comment_form_logged_in_after', 'add_my_tips');
+//function add_my_tips() {
+//	echo '<div class="smiley-bottom">';
+//		include(TEMPLATEPATH . '/smiley.php');
+//	echo '</div>';
+//}
+//add_filter('comment_form_after_fields', 'add_my_tips');
+//add_filter('comment_form_logged_in_after', 'add_my_tips');
 
 //设置文章头部条目信息
 if ( ! function_exists( 'hmjblog_entry_meta' ) ) :
