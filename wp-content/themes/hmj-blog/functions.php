@@ -1,6 +1,9 @@
 <?php
 //保护后台登录
 function login_protection(){
+	if($_GET['action'] == 'register'){
+		return;
+	}
 	$url = home_url();
 	if($_GET['code'] != 'login'){
 		header('Location:'.$url);
