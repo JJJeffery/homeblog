@@ -1,7 +1,8 @@
 <?php
 //保护后台登录
 function login_protection(){
-	if($_GET['action'] == 'register'){
+	$action = trim($_GET['action']);
+	if(in_array($action,array('register','rp'))){
 		return;
 	}
 	$url = home_url();
