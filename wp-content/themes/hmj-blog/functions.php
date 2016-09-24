@@ -8,6 +8,20 @@ function login_protection(){
 }
 add_action('login_enqueue_scripts','login_protection');
 
+//得到文章第一张图片
+function get_first_image() {
+	global $post, $posts;
+	$first_img = '';
+	ob_start();
+	ob_end_clean();
+	$output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $post->post_content, $matches);
+	$first_img = $matches [1] [0];
+	if(empty($first_img)){ //Defines a default image
+		$first_img = "http://www.lijiaming.net/wp-content/themes/hmj-blog/images/new-logo.png";
+	}
+	return $first_img;
+}
+
 //菜单设置
 function hmjblog_setup() {
 	add_editor_style();
