@@ -63,8 +63,8 @@ if (is_home() || is_category()) {
 </head>
 <body <?php body_class(); ?>>
 
-<div style="margin:0 auto;display:none;">
-	<img src="<?php echo get_special_image(); ?>" width="100px" height="100px"/>
+<div style="margin:0 auto;display: none;">
+	<img src="<?php echo get_special_image(); ?>" width="300px" height="300px"/>
 </div>
 <header id="masthead" class="site-header" role="banner">
 <!--	<nav id="site-navigation" class="main-navigation-top" role="navigation">-->

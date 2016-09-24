@@ -25,7 +25,7 @@ function get_first_image() {
 //得到文章特色图片
 function get_special_image() {
 	global $post, $posts;
-	$array_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(100,100));
+	$array_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full');
 	$special_img = $array_image_url[0];
 	if(empty($special_img)){ //Defines a default image
 		$special_img = "http://www.lijiaming.net/wp-content/themes/hmj-blog/images/new-logo.png";
