@@ -22,6 +22,16 @@ function get_first_image() {
 	return $first_img;
 }
 
+//得到文章特色图片
+function get_special_image() {
+	global $post, $posts;
+	$array_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(100,100));
+	$special_img = $array_image_url[0];
+	if(empty($special_img)){ //Defines a default image
+		$special_img = "http://www.lijiaming.net/wp-content/themes/hmj-blog/images/new-logo.png";
+	}
+	return $special_img;
+}
 //菜单设置
 function hmjblog_setup() {
 	add_editor_style();
