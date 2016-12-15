@@ -1,14 +1,12 @@
 <?php
 if (is_home() || is_category()) {
-	$description = '李家明的博客,李家明的主页,李家明,PHP爱好者,Jeffery Li';
-	$keywords = '李家明,Jeffery,Jeffery Li,李家明Jeffery,李家明博客,李家明主页';
+	$description = '明家有李,李家明的博客,李家明的主页,李家明,PHP爱好者,Jeffery Li';
+	$keywords = '明家有李,李家明,Jeffery,Jeffery Li,李家明Jeffery,李家明博客,李家明主页';
 } else if (is_single()) {
 	if ($post->post_excerpt) {
 		$description = $post->post_excerpt;
 	} else {
-		$description = mb_strimwidth(
-				strip_tags(apply_filters('the_content',$post->post_content))
-				,0,180);
+		$description = mb_strimwidth(strip_tags(apply_filters('the_content',$post->post_content)),0,180);
 	}
 	$keywords = '';
 	$tags = wp_get_post_tags($post->ID);
@@ -24,7 +22,15 @@ if (is_home() || is_category()) {
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title><?php wp_title( '-', true, 'right' ); ?></title>
+	<title>
+		<?php
+		if(is_single()){
+			echo the_title();
+		}else{
+			wp_title( '|', true, 'right' );
+		}
+		?>
+	</title>
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="stylesheet" id="fontawesome-style-css" href="<?php bloginfo('template_directory'); ?>/font-awesome/css/font-awesome.min.css?ver=4.0.1" type='text/css' media='all' />
@@ -48,6 +54,8 @@ if (is_home() || is_category()) {
 	</script>
 	<meta name="keywords" content="<?php echo $keywords; ?>" />
 	<meta name="description" content="<?php echo $description; ?>" />
+
+
     <!--baidu tongji-->
 	<script>
 		var _hmt = _hmt || [];
